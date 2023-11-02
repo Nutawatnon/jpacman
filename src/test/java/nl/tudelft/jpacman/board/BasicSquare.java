@@ -16,7 +16,10 @@ class BasicSquare extends Square {
      * Creates a new basic square.
      */
 
-    public Square[][] board;
+    private Square[][] board;
+    /**
+     * 
+     */
     BasicSquare() {
         super();
     }
@@ -26,12 +29,18 @@ class BasicSquare extends Square {
         return true;
     }
 
+    /**
+     * 
+     */
     @Override
     @SuppressWarnings("return.type.incompatible")
     public Sprite getSprite() {
         return null;
     }
 
+    /**
+     * 
+     */
     @Test
     void boardTest() {
         BasicSquare basicSquare = new BasicSquare();
@@ -45,6 +54,9 @@ class BasicSquare extends Square {
 
     }
 
+    /**
+     * 
+     */
     @Test
     void nullSquareTest() {
         Square[][] grid = {
