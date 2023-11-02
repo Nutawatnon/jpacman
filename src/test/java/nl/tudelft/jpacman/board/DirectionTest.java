@@ -10,12 +10,12 @@ import org.junit.jupiter.api.Test;
  *
  * @author Arie van Deursen
  */
-public class DirectionTest{
+public class DirectionTest {
     /**
      * Do we get the correct delta when moving north?
      */
     @Test
-    void testNorth(){
+    void testNorth() {
         Direction north = Direction.valueOf("NORTH");
         assertThat(north.getDeltaY()).isEqualTo(-1);
     }
@@ -24,7 +24,7 @@ public class DirectionTest{
      * 
      */
     @Test
-    void testSouth(){
+    void testSouth() {
         Direction south = Direction.valueOf("SOUTH");
         assertThat(south.getDeltaY()).isEqualTo(1);
     }
@@ -33,7 +33,7 @@ public class DirectionTest{
      * 
      */
     @Test
-    void testEast(){
+    void testEast() {
         Direction east = Direction.valueOf("EAST");
         assertThat(east.getDeltaX()).isEqualTo(1);
     }
@@ -42,7 +42,7 @@ public class DirectionTest{
      * 
      */
     @Test
-    void testWest(){
+    void testWest() {
         Direction west = Direction.valueOf("WEST");
         assertThat(west.getDeltaX()).isEqualTo(-1);
     }
