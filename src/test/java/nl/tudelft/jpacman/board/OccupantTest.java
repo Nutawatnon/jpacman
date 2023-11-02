@@ -55,7 +55,7 @@ class OccupantTest {
     void testReoccupy() {
         // Remove the following placeholder:
         Square square;
-        if(unit.hasSquare()){
+        if(unit.hasSquare()) {
             square = unit.getSquare();
             unit.occupy(square);
             assertThat(unit.invariant()).isTrue();
