@@ -2,7 +2,7 @@ package nl.tudelft.jpacman.board;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.assertj.core.api.Assert;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
  * @author Jeroen Roosen 
  *
  */
-class OccupantTest {
+class OccupantTest{
 
     /**
      * The unit under test.
@@ -23,7 +23,7 @@ class OccupantTest {
      * Resets the unit under test.
      */
     @BeforeEach
-    void setUp() {
+    void setUp(){
         unit = new BasicUnit();
     }
 
@@ -31,7 +31,7 @@ class OccupantTest {
      * Asserts that a unit has no square to start with.
      */
     @Test
-    void noStartSquare() {
+    void noStartSquare(){
         // Remove the following placeholder:
         assertThat(unit.hasSquare()).isFalse();
     }
@@ -41,7 +41,7 @@ class OccupantTest {
      * occupation.
      */
     @Test
-    void testOccupy() {
+    void testOccupy(){
         // Remove the following placeholder:
         assertThat(unit.invariant()).isTrue();
 
@@ -52,10 +52,10 @@ class OccupantTest {
      * double occupation.
      */
     @Test
-    void testReoccupy() {
+    void testReoccupy(){
         // Remove the following placeholder:
         Square square;
-        if(unit.hasSquare()) {
+        if(unit.hasSquare()){
             square = unit.getSquare();
             unit.occupy(square);
             assertThat(unit.invariant()).isTrue();
